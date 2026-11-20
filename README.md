@@ -313,24 +313,26 @@ python tests/test_api_workflow.py
 
 ## 12. Google Cloud Run Production Deployment
 
-SAHAJ AI is 100% container-native and ready for zero-downtime deployment on **Google Cloud Run**:
+SAHAJ AI is 100% container-native and ready for zero-downtime deployment on **Google Cloud Run**.
 
+For a full step-by-step UI walkthrough with screenshots and continuous deployment instructions, see **[DEPLOY_GCP.md](./DEPLOY_GCP.md)**.
+
+### Fast 1-Command Deployment via Google Cloud Shell
+Open Google Cloud Console, click **Activate Cloud Shell** (`>_`), and run:
 ```bash
-# Authenticate with Google Cloud
-gcloud auth login
-gcloud config set project [YOUR_GCP_PROJECT_ID]
-
-# Build and push container to Google Artifact Registry
-gcloud builds submit --tag gcr.io/[YOUR_GCP_PROJECT_ID]/sahaj-ai:latest
-
-# Deploy to Google Cloud Run
+git clone https://github.com/RishikPenumudi/Team-Zyric-.git
+cd Team-Zyric-
 gcloud run deploy sahaj-ai \
-    --image gcr.io/[YOUR_GCP_PROJECT_ID]/sahaj-ai:latest \
-    --platform managed \
+    --source . \
     --region us-central1 \
+    --platform managed \
     --allow-unauthenticated \
-    --port 8080 \
-    --set-env-vars SAHAJ_HARDWARE_MODE=SIMULATION,GEMINI_API_KEY=[YOUR_KEY]
+    --set-env-vars SAHAJ_HARDWARE_MODE=SIMULATION
+```
+
+### Automated Cloud Build Pipeline (`cloudbuild.yaml`)
+```bash
+gcloud builds submit --config cloudbuild.yaml
 ```
 
 ---

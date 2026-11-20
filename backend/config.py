@@ -16,7 +16,7 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # Server Config
 HOST = os.getenv("SAHAJ_HOST", "0.0.0.0")
-PORT = int(os.getenv("SAHAJ_PORT", "8000"))
+PORT = int(os.getenv("PORT", os.getenv("SAHAJ_PORT", "8000")))
 DEBUG = os.getenv("SAHAJ_DEBUG", "True").lower() in ("true", "1", "yes")
 
 # Gemini API
