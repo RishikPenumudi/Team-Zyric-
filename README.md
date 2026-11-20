@@ -3,11 +3,15 @@
 ### *Intelligence for Natural Dyeing. Technology for Traditional Artisans.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
+[![Live App](https://img.shields.io/badge/Live%20App-Cloud%20Run-success.svg?logo=google-cloud)](https://sahaj-ai-221060913293.asia-south1.run.app)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Google Cloud Run](https://img.shields.io/badge/Google%20Cloud-Run%20Ready-4285F4.svg?logo=google-cloud)](https://cloud.google.com/run)
+[![Google Cloud Run](https://img.shields.io/badge/Google%20Cloud-Deployed%20(asia--south1)-4285F4.svg?logo=google-cloud)](https://sahaj-ai-221060913293.asia-south1.run.app)
 [![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini%20API-orange.svg?logo=google)](https://ai.google.dev/)
 [![SDG 12 & 6](https://img.shields.io/badge/UN%20SDGs-SDG%2012%20%7C%20SDG%206-success.svg)](https://sdgs.un.org/)
 [![Buildathon: 2026](https://img.shields.io/badge/Google%20DeepMind-Startup%20Buildathon%202026-teal.svg)](https://deepmind.google/)
+
+> 🚀 **Live Production Deployment on Google Cloud Run (asia-south1 Mumbai):**  
+> **👉 [https://sahaj-ai-221060913293.asia-south1.run.app](https://sahaj-ai-221060913293.asia-south1.run.app)**
 
 ---
 
