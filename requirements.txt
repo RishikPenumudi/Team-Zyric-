@@ -1,0 +1,10 @@
+# SAHAJ AI - System Requirements & Dependencies
+starlette>=1.6.0
+uvicorn>=0.30.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+pillow>=10.0.0
+requests>=2.31.0
+httpx>=0.27.0
+python-multipart>=0.0.9
+matplotlib>=3.8.0
