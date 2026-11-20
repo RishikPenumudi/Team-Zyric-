@@ -8,3 +8,7 @@ requests>=2.31.0
 httpx>=0.27.0
 python-multipart>=0.0.9
 matplotlib>=3.8.0
+
+# Optional Presentation & Document Generation Dependencies
+python-pptx>=1.0.2
+reportlab>=5.1.0
